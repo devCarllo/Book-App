@@ -1,11 +1,16 @@
-import { books } from "../constants/mockData.js";
-import BookCard from "./BookCard.jsx";
-import styles from "../style/Books.module.css";
 import { useState } from "react";
+
+import { books as bookData } from "../constants/mockData.js";
+import BookCard from "./BookCard.jsx";
 import LikedCard from "./LikedCard.jsx";
+import Search from "./Search.jsx";
+
+import styles from "../style/Books.module.css";
 
 const Books = () => {
+  const [books, setBooks] = useState(bookData);
   const [favBooks, setFavBooks] = useState([]);
+  const [search, setSearch] = useState();
 
   const handleList = (books, status) => {
     if (status) {
@@ -13,6 +18,17 @@ const Books = () => {
       setFavBooks(liked);
     } else {
       setFavBooks((liked) => [...liked, books]);
+    }
+  };
+
+  const searchHandler = () => {
+    if (search) {
+      const searchedBooks = bookData.filter((item) =>
+        item.title.toLowerCase().includes(search)
+      );
+      setBooks(searchedBooks);
+    } else {
+      setBooks(bookData);
     }
   };
 
@@ -28,6 +44,12 @@ const Books = () => {
           )}
         </div>
       </div>
+
+      <Search
+        search={search}
+        setSearch={setSearch}
+        searchHandler={searchHandler}
+      />
 
       <div className={styles.books_container}>
         {books.map((item) => (

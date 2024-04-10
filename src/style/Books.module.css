@@ -2,9 +2,10 @@
 
 .fav_container {
   width: 100%;
-  margin-top: 10px;
+  margin-top: 15px;
   padding: 10px;
   background-color: var(--highLight1);
+  margin-bottom: 20px;
 }
 .fav_text_title {
   width: 100%;
