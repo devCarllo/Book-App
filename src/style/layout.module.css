@@ -1,0 +1,32 @@
+/* ++++++++++ HEADER ++++++++++ */
+
+.header_container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid var(--highLight2);
+  margin-top: 10px;
+}
+.header_text {
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+/* ++++++++++ FOOTER ++++++++++ */
+
+.footer_container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid var(--highLight2);
+  margin-bottom: 10px;
+}
+.footer_text {
+  text-align: center;
+  letter-spacing: 3px;
+}
+.footer_text_love {
+  color: var(--highLight1);
+}

@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap");
+
+:root {
+  --main_bgColor: #0f0e17;
+  --text: #fffffe;
+  --paragraph: #a7a9be;
+  --btn: #ff8906;
+  --stroke: #000;
+  --highLight1: #f25f4c;
+  --highLight2: #e53170;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
+  border: none;
+  font-family: "ABeeZee";
+}
+
+body {
+  max-width: 640px;
+  background-color: var(--main_bgColor);
+  color: var(--text);
+  margin: 0 auto;
+}

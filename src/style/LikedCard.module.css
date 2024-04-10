@@ -1,0 +1,18 @@
+.card_container {
+  width: 85px;
+  height: 190px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: var(--stroke);
+  margin: 5px;
+}
+.card_image {
+  width: 100%;
+  border-radius: 5px;
+}
+.card_title {
+  margin-top: 5px;
+  font-size: 0.7rem;
+  text-align: center;
+  display: block;
+}
